@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+    import HelloWorld from './components/HelloWorld.vue'
+    import child from './components/testchild.vue'
 </script>
 
 <template>
@@ -8,7 +9,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="vue test!" />
+      <HelloWorld msg="test dayo" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -16,6 +17,9 @@ import HelloWorld from './components/HelloWorld.vue'
       </nav>
     </div>
   </header>
+    <child></child>
+
+    
 
   <RouterView />
 </template>
